@@ -8,15 +8,11 @@
 </head>
 <body>
   <canvas id="game-board" width="160" height="160"></canvas>
-  <script>
+  <script type="module">
     // Insert code here:
-    function Square(x, y, w, h, ctx, actor = null) {
-
-    }
-
-    Square.prototype.draw = function() {
-
-    };
+    import Square from './js/Square.js';
+    import TicTacToe from './js/TicTacToe.js';
+    console.log(new Square());
   </script>
 </body>
 </html>
