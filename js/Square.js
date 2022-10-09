@@ -1,4 +1,4 @@
-export default function Square(x, y, w, h, ctx, actor = null) {
+function Square(x, y, w, h, ctx, actor = null) {
   this.x = x;
   this.y = y;
   this.w = w;
@@ -23,3 +23,5 @@ Square.prototype.draw = function() {
     this.checkForActor(this.ctx);
   }
 };
+
+export default Square;
